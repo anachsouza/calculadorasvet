@@ -12,17 +12,18 @@
     var recovery = 1.33
     var nutralife = 1.88
     var kitten = 4.22  // alterar aqui caso use outra ração seca - usar cal/g
-    var manutencao = (70 * ((peso)**0.75))
-    var repouso = (100 * ((peso) ** 0.67))
-    var cal1 = manutencao/recovery
-    var cal2 = repouso/recovery
-    var cal3 = manutencao/nutralife
-    var cal4 = repouso/nutralife
-    var cal5 = manutencao/kitten
-    var cal6 = repouso/kitten
+    var repouso = (70 * ((peso)**0.75))
+    var manutencao = (100 * ((peso) ** 0.67))
+    var cal1 = repouso/recovery
+    var cal2 = manutencao/recovery
+    var cal3 = repouso/nutralife
+    var cal4 = manutencao/nutralife
+    var cal5 = repouso/kitten
+    var cal6 = manutencao/kitten
 
     //saída do calculo do requerimento calórico:
-    document.write("O requerimento calórico diário de repouso é: " + manutencao.toFixed(1) + " kcal/dia. <br> <br>");
+    document.write("Para um gato com o peso " + peso + "kg <br>");
+    document.write("O requerimento calórico diário de repouso é: " + repouso.toFixed(1) + " kcal/dia. <br> <br>");
 
     //saida do calculo da dieta em g/dia
     document.write("O requerimento de repouso é: <br>");
@@ -52,7 +53,7 @@
 
 
     // saída do calculo do requerimento calorico diario
-    document.write("O requerimento calórico diário de manutenção é: " + repouso.toFixed(1) + "kcal/dia. <br> <br>");
+    document.write("O requerimento calórico diário de manutenção é: " + manutencao.toFixed(1) + "kcal/dia. <br> <br>");
     //saída do calculo da dieta de manutençao - em g/dia
     //obs: uso pouco então deixei apenas o cálculo básico, mas basta copiar os 3 blocos acima e substituir:
     // cal1 por cal2 ; cal3 por cal4 ; cal5 por cal6.
@@ -65,4 +66,5 @@
 
  
 </script>
+
 
