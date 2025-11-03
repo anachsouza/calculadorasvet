@@ -1,0 +1,22 @@
+<meta charset="UTF=8">
+
+<script>
+
+// Calculadora de infusão de noradrenalina para gatos, considerando uma diluição de 80mcg/ml.
+
+var peso = parseFloat(prompt("Digite o peso do gato (use ponto no lugar da vírgula)"));
+var taxa;
+
+document.write("Infusão de noradrenalina (diluição 80mcg/ml) para o peso: " + peso + "kg <br> <br>");
+
+for (let n = 0.5; n <= 2.01 ; n += 0.1) {
+    let taxa = (peso * n * 60)/80
+    document.write("dose = " + n.toFixed(1) + "mcg/kg/min → taxa = " + taxa.toFixed(2) + " mL/h<br>");
+}
+
+
+document.write("<br> <br> Para diluir noradrenalina: <br>");
+document.write("1 ampola 4mg/ml (4ml) em 46ml de soro glicose 5% ou NaCl 0,9%");
+
+
+</script>
